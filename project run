@@ -1,0 +1,3 @@
+1..\myenv\Scripts\activate  # Activate virtual environment
+2.$env:FLASK_APP = "main.py"
+3.flask run
