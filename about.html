@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About This Project</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Extra animations -->
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-400 to-purple-600 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-2xl text-center fade-in-up">
+    <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 mb-6">
+      About This Project 🚀
+    </h1>
+
+    <p class="text-gray-700 text-lg leading-relaxed mb-8">
+      This project is a beautifully designed, lightweight HTML page built using <span class="font-semibold text-indigo-600">Tailwind CSS</span>. 
+      <br><br>
+      It showcases how you can quickly create modern, animated, and responsive websites without writing heavy custom CSS.
+      The smooth fade-in animations, vibrant gradients, and attractive layout make it perfect for portfolios, landing pages, or showcasing your personal projects.
+      <br><br>
+      Tailwind's utility-first approach keeps the code clean and manageable, ensuring faster development and more creativity. 
+    </p>
+
+    <a href="#" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-10 rounded-full transition-all duration-300">
+      Explore More
+    </a>
+  </div>
+
+</body>
+</html>

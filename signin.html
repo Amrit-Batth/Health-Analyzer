@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Rotation animation */
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .rotate-animation {
+            animation: rotate 3s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex justify-center items-center">
+
+    <div class="bg-white p-8 rounded-2xl shadow-xl max-w-sm w-full transform hover:scale-105 transition duration-500 ease-in-out">
+        <h2 class="text-3xl font-semibold text-center text-purple-600 mb-6">Sign In</h2>
+
+        <!-- Sign In Form -->
+        <form method="POST" class="space-y-6">
+            <div class="space-y-2">
+                <label for="username" class="text-lg font-medium text-gray-700">Username</label>
+                <input type="text" name="username" id="username" required class="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-300 ease-in-out" placeholder="Enter your username">
+            </div>
+
+            <div class="space-y-2">
+                <label for="password" class="text-lg font-medium text-gray-700">Password</label>
+                <input type="password" name="password" id="password" required class="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition duration-300 ease-in-out" placeholder="Enter your password">
+            </div>
+
+            <div class="space-y-2">
+                <button type="submit" class="w-full py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition duration-300 ease-in-out transform hover:scale-105 hover:rotate-3">
+                    Sign In
+                </button>
+            </div>
+        </form>
+
+        <!-- Link to Sign Up -->
+        <p class="text-center text-gray-600 mt-4">
+            Don't have an account? <a href="{{ url_for('signup') }}" class="text-purple-600 hover:text-purple-700 hover:underline">Sign Up</a>
+        </p>
+    </div>
+
+    <!-- Animated Icon -->
+    <div class="absolute top-10 right-10 rotate-animation">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-16 w-16 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+    </div>
+</body>
+</html>

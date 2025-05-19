@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Symptoms List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Keyframes for fade-in animation */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Apply fadeInUp animation */
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-indigo-100 to-purple-200 min-h-screen flex items-center justify-center p-6">
+  <div class="bg-white rounded-3xl shadow-2xl p-10 w-full max-w-4xl fade-in-up">
+    <h1 class="text-4xl font-extrabold mb-10 text-center text-indigo-700 animate-pulse">🩺 Symptoms</h1>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Example of symptom card with hover and animation -->
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Itching</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Skin Rash</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Nodal Skin Eruptions</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Continuous Sneezing</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Shivering</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Anxiety</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Cold Hands and Feet</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Mood Swings</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Weight Loss</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Restlessness</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Lethargy</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Patches in Throat</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Irregular Sugar Level</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Cough</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">High Fever</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Sunken Eyes</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Breathlessness</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Sweating</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Dehydration</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Indigestion</div>
+
+      <div class="bg-gradient-to-r from-indigo-200 to-purple-300 p-4 rounded-xl text-indigo-800 font-semibold text-center shadow-md transform transition-transform hover:scale-110 hover:shadow-xl hover:from-purple-300 hover:to-indigo-200 duration-300">Headache</div>
+    </div>
+  </div>
+</body>
+</html>

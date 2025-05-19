@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedAI Blog – Medical Image & Symptom AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate-spin-slow { animation: spin-slow 20s linear infinite; }
+    .animate-fade-in-up { animation: fade-in-up 1s ease-out forwards; }
+  </style>
+</head>
+<body class="relative bg-gradient-to-br from-blue-100 via-white to-pink-100 min-h-screen overflow-x-hidden">
+
+  <!-- Rotating Background Element -->
+  <div class="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
+    <div class="w-2/3 h-2/3 bg-indigo-100 rounded-full opacity-20 animate-spin-slow"></div>
+  </div>
+
+  <div class="relative z-10 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-8 py-4 bg-white/70 backdrop-blur-md shadow-md animate-fade-in-up">
+      <a href="#" class="text-2xl font-extrabold text-indigo-600">MedAI Blog</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="flex flex-col md:flex-row items-center justify-between px-8 py-20 animate-fade-in-up">
+      <div class="md:w-1/2 mb-12 md:mb-0">
+        <h1 class="text-5xl md:text-6xl font-bold text-indigo-700 mb-4">Medical Image & Symptom AI</h1>
+        <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">
+          Harnessing cutting-edge AI to analyze medical images and detect over 100+ symptoms, 
+          empowering early insights and better outcomes.
+        </p>
+        <a href="#features" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition">
+          Learn More
+        </a>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+             class="w-48 h-48 text-indigo-300 animate-spin-slow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M19.428 15.341C18.4 16.63 16.328 18 12 18s-6.4-1.37-7.428-2.659A9 9 0 1112 3a9 9 0 017.428 12.341z"/>
+        </svg>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="px-8 py-16 animate-fade-in-up">
+      <h2 class="text-3xl font-bold text-center text-indigo-600 mb-12">Key Features</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl transform hover:rotate-3 transition duration-500">
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Image Lesion Detection</h3>
+          <p class="text-gray-700">Automatically detect and highlight skin lesions, redness, and texture anomalies in high-resolution images.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl transform hover:-rotate-3 transition duration-500">
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Symptom Checker</h3>
+          <p class="text-gray-700">Select from 100+ symptoms to predict possible conditions and receive guidance on next steps.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl transform hover:rotate-3 transition duration-500">
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Interactive Reports</h3>
+          <p class="text-gray-700">Get a detailed, easy-to-read medical report with bold headings and clear explanations.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl transform hover:-rotate-3 transition duration-500">
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Real-time Analysis</h3>
+          <p class="text-gray-700">Fast AI processing with immediate feedback to help identify urgent cases promptly.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl transform hover:rotate-3 transition duration-500">
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Mobile Friendly</h3>
+          <p class="text-gray-700">Fully responsive design ensures seamless experience on smartphones and tablets.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl transform hover:-rotate-3 transition duration-500">
+          <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Secure & Private</h3>
+          <p class="text-gray-700">Data encryption and privacy-first architecture keep patient information safe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto text-center py-6 bg-white/70 backdrop-blur-md shadow-inner animate-fade-in-up">
+      <p class="text-gray-600">&copy; 2025 MedAI. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
